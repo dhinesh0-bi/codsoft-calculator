@@ -1,0 +1,78 @@
+body {
+  background: #d9dbdf;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+.cal{  
+  width: 270px;
+  background: #ebfbff;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+}
+#dis{
+  width: 97%;
+  height: 50px;
+  font-size: 22px;
+  margin-bottom: 15px;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: right;
+  border: 1px solid rgb(172, 171, 171);
+  background-color: #ffffff;
+  color: #1a1a1a;
+  box-sizing: border-box;
+}
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+button {
+  padding: 15px;
+  font-size: 18px;
+  border: none;
+  border-radius: 10px;
+  background: #e0e6ed; 
+  color: #1a1a1a;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+button:hover {
+  background: #d4dce5;
+}
+button:active {
+  background: #c0cbd6;
+}
+button:nth-child(4),
+button:nth-child(8),
+button:nth-child(12),
+button:nth-child(16) {
+  background: #007bff;
+  color: white;
+}
+button:nth-child(15) {
+  background: #28a745;
+  color: white;
+}
+button.wide {
+  grid-column: span 2;
+}
+#wide1{
+  background: #dc3545;
+  color: white;
+}
+#wide1:hover {
+  background: #c82333;
+}
+#wide2{
+  background: #f08127;
+  color: white;
+}
+#wide2:hover {
+  background: #e66f00;
+}
